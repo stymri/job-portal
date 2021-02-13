@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="commonstyle.css">
+<link rel="stylesheet" type="text/css" href="Search.css">
+<style type="text/css">
+.header{
+color: #20ff33;
+font-size: 1.0em;
+}
+button {
+	border-radius: 10px;
+	background-color: #7b97d2;
+	padding: 2px 5px;
+	border-color: #ff0000;
+}
+/* style= "background-color: #c07322;" */
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+<div class="topbar">
+		<div class="fixed">
+			<div style="padding: 4px 100px;">
+				JOBS FOR YOU
+				<div style="float: right;">
+					<a href=aboutus.html  class="header">About Us</a>
+				</div>
+			</div>
+		</div>
+		<img src="Images\Adminheader.jpg" width=100%  height=150px 
+			style="margin: 0px; min-width: 500px;">
+	</div>
+	<div class="topbar">
+		<table>
+			<tr>
+			<td><div class="action">
+						<a href="Addcompany.jsp"  class="header">Add Company</a>
+					</div></td>
+				<td><div class="action" style="padding: 0px;">
+						<img src="Images\bar.jpg" height="25px">
+					</div></td>
+				<td><div class="action">
+						<button id="job"> Veiw jobs </button>
+					</div></td>
+				<td><div class="action" style="padding: 0px;">
+						<img src="Images\bar.jpg" height="25px">
+					</div></td>
+				<td><div class="action">
+						<button id="company"> Veiw company</button>
+					</div></td>
+				<td><div class="action" style="padding: 0px;">
+						<img src="Images\bar.jpg" height="25px">
+					</div></td>
+				<td><div class="action">
+						<button id="user"> Veiw user </button> 
+					</div></td>
+				<td><div class="action" style="padding: 0px;">
+						<img src="Images\bar.jpg" height="25px">
+					</div></td>
+				<td><div class="action">
+						<a href="AdminChangepassword.jsp"  class="header">Change password </a>
+					</div></td>
+				<td><div class="action" style="padding: 0px;">
+						<img src="Images\bar.jpg" height="25px">
+					</div></td>
+				<td><div class="action">
+						<a href="Logout"  class="header"> LOG OUT </a>
+					</div></td>
+			</tr>
+		</table>
+	</div>
+	<div id="jobwhere">
+	</div>
+	<script type="text/javascript">
+		document.getElementById("job").onclick = function() {
+			document.getElementById("jobwhere").innerHTML = "<iframe src='Jobsearch.jsp' scrolling='no' height='100' marginheight='0'><a href='Jobsearch.html'>Job search</iframe>";
+		}
+		document.getElementById("user").onclick = function() {
+			document.getElementById("jobwhere").innerHTML = "<iframe src='SearchUsers.html' scrolling='no' height='100' marginheight='0'><a href='Jobsearch.html'>Job search</iframe>";
+		}
+		document.getElementById("company").onclick = function() {
+			document.getElementById("jobwhere").innerHTML = "<iframe src='SearchCompany.html' scrolling='no' height='100' marginheight='0'><a href='Jobsearch.html'>Job search</iframe>";
+		}
+	</script>
+</body>
+</html>

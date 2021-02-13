@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="Search.css">
+<title></title>
+</head>
+<body>
+	<div id="search">
+		Search Company : <br>
+		<form action="AdminSearchCompany.jsp" target=_top method="get">
+			<div class="input">
+				<table>
+					<tr>
+						<td class="space">Mail</td>
+						<td class="space"><input type="text" name="mail"> <input
+							type="hidden" name="index" value="0"></td>
+						<td class="space">Name</td>
+						<td class="space"><input type="text" name="name">
+						<td class="space">Sort by</td>
+						<td class="space"><select name="sortby">
+								<option value="">none</option>
+								<option value="mail">mail</option>
+								<option value="name">name</option>
+						</select></td>
+						<td class="space"><input type="submit" value="Search"></td>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

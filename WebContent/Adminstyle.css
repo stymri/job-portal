@@ -1,0 +1,15 @@
+@CHARSET "ISO-8859-1";
+body{
+	background: linear-gradient(#de790d,rgba(188, 241, 115, 0.72));
+min-height: 100%; 
+ }
+ .admin{
+ margin: 2% 10%;
+ }
+ .admin{
+ padding: 2% 10%;
+ height:100%; 
+ }
+ html{
+ 	min-height:100%;
+ }

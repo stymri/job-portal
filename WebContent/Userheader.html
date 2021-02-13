@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="usersytle.css">
+<style type="text/css">
+button {
+	background-image: url(images/button.gif);
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+.action {
+	text-align: center;
+	float: left;
+	padding: 5px 20px 0px 20px;
+	margin: 0px;
+}
+
+a:link {
+	color: red;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+a:visited {
+	color: green;
+}
+
+a:hover {
+	color: blue;
+}
+body{
+margin:0px;
+padding:0px;
+background-color: #bbbb33;
+}
+iframe {
+width:720px;
+	hieght: 100px;
+	margin: 0px;
+	border-style: hidden;
+}
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="topbar">
+		<div class="fixed">
+			<div style="padding: 4px 100px;">
+				JOBS FOR YOU
+				<div style="float: right;">
+					<a href=aboutus.html>About Us</a>
+				</div>
+
+			</div>
+		</div>
+		<img src="Images\homepage.jpg" width=100% height=100px
+			style="margin: 0;">
+	</div>
+	<div class="topbar">
+		<table>
+			<tr>
+				<td><div>
+						<!-- <a href="Veiwjob.jsp"> JOBS </a> -->
+						<button id="job">JOBS</button>
+					</div></td>
+				<td><div class="action" style="padding: 0px;">
+						<img src="Images\bar.jpg" height="25px">
+					</div></td>
+				<td><div class="action">
+						<a href="appliedjob.jsp" style="font-size:1.0em;"> APPLEID JOBS </a>
+					</div></td>
+				<!-- <td><div class="action" style="padding: 0px;">
+						<img src="Images\bar.jpg" height="25px">
+					</div></td>
+				<td><div class="action">
+						<a href="Company" style="font-size:1.0em;"> Company</a>
+					</div></td> -->
+				<td><div class="action" style="padding: 0px;">
+						<img src="Images\bar.jpg" height="25px">
+					</div></td>
+				<td><div class="action">
+						<a href="Usermessage.jsp?index=0" style="font-size:1.0em;"> MESSAGE </a>
+					</div></td>
+				<td><div class="action" style="padding: 0px;">
+						<img src="Images\bar.jpg" height="25px">
+					</div></td>
+				<td><div class="action">
+						<a href="Veiwuserprofile.jsp?page=Userprofile.jsp" style="font-size:1.0em;"> PROFILE </a>
+					</div></td>
+				<td><div class="action" style="padding: 0px;">
+						<img src="Images\bar.jpg" height="25px">
+					</div></td>
+				<td><div class="action">
+						<a href="Logout" style="font-size:1.0em;"> LOG OUT </a>
+					</div></td>
+			</tr>
+		</table>
+	</div>
+	<div id="jobwhere">
+	</div>
+	<script type="text/javascript">
+		document.getElementById("job").onclick = function() {
+			document.getElementById("jobwhere").innerHTML = "<iframe src='Jobsearch.jsp' scrolling='no' height='100' marginheight='0'><a href='Jobsearch.html'>Job search</iframe>";
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+@CHARSET "ISO-8859-1";
+.login {
+	background-color: #ff6666;
+	padding: 40px;
+	margin: 5% 20%;
+	border-radius: 40px;
+	color: #333333;
+	overflow:auto;
+	min-width: 300px;
+	max-width: 450px;
+}
+
+input {
+	margin: 5px;
+	border-radius: 10px;
+	min-width: 50px;
+	min-height: 25px;
+}
+
+h3 {
+	color: red;
+	text-align: center;
+}

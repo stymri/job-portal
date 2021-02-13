@@ -1,0 +1,62 @@
+@CHARSET "ISO-8859-1";
+#search {
+	background-color: #0099ff;
+	background-image: url("Images/search.jpg");
+	background-repeat: no-repeat;
+	padding: 5px;
+	margin: 0px auto;
+	height: 100px;
+	color: #20ff33;
+    padding : 5px;
+	width: 720px;
+	padding: 5px;
+}
+
+#search:HOVER {
+	background-image: none;
+}
+
+.input {
+	padding: 10px 40px;
+	font-size: 15px;
+	margin: 0px;
+}
+
+.space {
+	margin: 2% 5%;
+	text-shadow: green;
+}
+
+select {
+	border-color: #ff6633;
+	border-width: 2px;
+	border-radius: 10px;
+	color: #423137;
+	background-color: #4ba5e0;
+}
+
+select:HOVER {
+	border-radius: 20px;
+}
+
+option {
+	border-width: 20px;
+	padding: 10px;
+}
+body {
+	margin: 0px;
+	padding: 0 px;
+}
+input{
+	background-color: #df7e0f;
+}
+iframe {
+width:720px;
+	height: 100px;
+	margin: 0px;
+	border-style: hidden;
+}
+option{
+	margin: 10px;
+	padding: 5px;
+}
